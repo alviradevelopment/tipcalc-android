@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Star Tipper</string>
+    <string name="tipTitle">Tip Calculator</string>
+    <string name="service">Service Rating</string>
+    <string name="partyNum">Number in Party</string>
+    <string name="billTitle">Bill Total</string>
+    <string name="tipDueTitle">Tip Per Person</string>
+    <string name="dollarSign">$</string>
+    <string name="perctSign">%</string>
+    <string name="calcTip">Calculate Tip</string>
+    <string name="tipTotal">Total Tip</string>
+    <string name="resetBtn">Reset</string>
+    <string name="starTip">Star Tipper</string>
+    <string name="reset">Reset</string>
+    <string name="settings">Settings</string>
+    <string name="changePerc">Change Percentage</string>
+    <string name="s1">Star 1:</string>
+    <string name="s2">Star 2:</string>
+    <string name="s3">Star 3:</string>
+    <string name="s4">Star 4:</string>
+    <string name="s5">Star 5:</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="save">Save</string>
+    <string name="resDefaults">Restore Defaults</string>
+
+</resources>

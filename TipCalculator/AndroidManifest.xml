@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="dalvira.util.tipcalc"
+    android:versionCode="3"
+    android:versionName="1.03" >
+
+    <uses-sdk
+        android:minSdkVersion="1"
+        android:targetSdkVersion="4" />
+
+    <application
+        android:icon="@drawable/icon"
+        android:killAfterRestore="false"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".TipCalculatorActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
