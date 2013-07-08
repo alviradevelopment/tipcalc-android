@@ -5,7 +5,6 @@ package dalvira.util.tipcalc;
 import java.text.DecimalFormat;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -20,6 +19,11 @@ public class TipCalculatorActivity extends Activity implements
 	/** Called when the activity is first created. */
 
 	private static double perctVal = 0;
+	private static int s1Val = 13;
+	private static int s2Val = 15;
+	private static int s3Val = 18;
+	private static int s4Val = 20;
+	private static int s5Val = 22;
 	
 
 	@Override
@@ -82,19 +86,6 @@ public class TipCalculatorActivity extends Activity implements
 
 			}
 		});
-		
-		Button settings = (Button) findViewById(R.id.settingBtn);
-		settings.setOnClickListener(new OnClickListener(){
-
-			public void onClick(View arg0) {
-				Intent settingIntent = new Intent();
-				settingIntent.setClassName("dalvira.util.tipcalc","dalvira.util.tipcalc.SettingsActivity");
-				startActivity(settingIntent);
-				
-			}
-			
-		});
-
 
 		final RatingBar servRating = (RatingBar) findViewById(R.id.serviceRatingBarID);
 		servRating.setOnRatingBarChangeListener(this);
@@ -107,20 +98,20 @@ public class TipCalculatorActivity extends Activity implements
 		TextView servRatingPrint = (TextView) findViewById(R.id.servRateID);
 
 		if (rating == 1) {
-			servRatingPrint.setText(SettingsActivity.s1Val + "%");
-			perctVal = .01 * SettingsActivity.s1Val;
+			servRatingPrint.setText(s1Val + "%");
+			perctVal = .01 * s1Val;
 		} else if (rating == 2) {
-			servRatingPrint.setText(SettingsActivity.s2Val + "%");
-			perctVal = .01 * SettingsActivity.s2Val;
+			servRatingPrint.setText(s2Val + "%");
+			perctVal = .01 * s2Val;
 		} else if (rating == 3) {
-			servRatingPrint.setText(SettingsActivity.s3Val + "%");
-			perctVal = .01 * SettingsActivity.s3Val;
+			servRatingPrint.setText(s3Val + "%");
+			perctVal = .01 * s3Val;
 		} else if (rating == 4) {
-			servRatingPrint.setText(SettingsActivity.s4Val + "%");
-			perctVal = .01 * SettingsActivity.s4Val;
+			servRatingPrint.setText(s4Val + "%");
+			perctVal = .01 * s4Val;
 		} else if (rating == 5) {
-			servRatingPrint.setText(SettingsActivity.s5Val + "%");
-			perctVal = .01 * SettingsActivity.s5Val;
+			servRatingPrint.setText(s5Val + "%");
+			perctVal = .01 * s5Val;
 		} else {
 			servRatingPrint.setText("%");
 			perctVal = 0;
